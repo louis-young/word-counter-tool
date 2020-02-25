@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 
-import Textarea from "./components/Textarea/Textarea";
+import Layout from "./components/Layout/Layout";
+import Header from "./components/Header/Header";
+import Counter from "./components/Counter/Counter";
+import Footer from "./components/Footer/Footer";
 
 import "./stylesheets/main.scss";
 
@@ -9,14 +12,16 @@ import "./stylesheets/main.scss";
  */
 
 const App = () => {
-  const [words, setWords] = useState(null);
-  const [characters, setCharacters] = useState(null);
+  const [words, setWords] = useState(0);
+  const [characters, setCharacters] = useState(0);
 
   return (
     <div className="App">
-      <h1>{words}</h1>
-      <h1>{characters}</h1>
-      <Textarea setWords={setWords} setCharacters={setCharacters} />
+      <Layout>
+        <Header words={words} characters={characters} />
+        <Counter setWords={setWords} setCharacters={setCharacters} />
+        <Footer />
+      </Layout>
     </div>
   );
 };

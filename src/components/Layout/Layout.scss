@@ -1,0 +1,10 @@
+@import "../../stylesheets/abstracts/variables";
+
+// Layout.
+.layout {
+  margin: 2.5rem auto !important;
+  box-shadow: 0 0.5em 2em rgba(27, 41, 42, 0.0625);
+  background: $white;
+  border-radius: 1rem;
+  padding: 2rem;
+}
