@@ -2,6 +2,10 @@ import React from "react";
 
 import "./Header.scss";
 
+/**
+ * Header component.
+ */
+
 const Header = ({ words, characters }) => {
   return (
     <header className="header">

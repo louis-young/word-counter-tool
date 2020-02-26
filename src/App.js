@@ -12,6 +12,7 @@ import "./stylesheets/main.scss";
  */
 
 const App = () => {
+  // Application level state.
   const [words, setWords] = useState(0);
   const [characters, setCharacters] = useState(0);
 
