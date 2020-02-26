@@ -1,20 +1,14 @@
 @import "../../stylesheets/abstracts/breakpoints";
+@import "../../stylesheets/abstracts/variables";
+@import "../../stylesheets/abstracts/extends";
 @import "../../stylesheets/base/typography";
 
 // Footer.
 .footer {
-  border-top: 1px solid #e8e9ea;
+  border-top: 1px solid $border;
 
   &__text {
     padding-bottom: 0;
     padding-top: 2rem;
-  }
-
-  &__link {
-    font-weight: $semi-bold;
-    color: rgb(55, 123, 226);
-    &:hover {
-      color: rgb(97, 152, 233);
-    }
   }
 }

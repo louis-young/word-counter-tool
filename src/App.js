@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 import Layout from "./components/Layout/Layout";
 import Header from "./components/Header/Header";
-import Counter from "./components/Counter/Counter";
+import Input from "./components/Input/Input";
 import Footer from "./components/Footer/Footer";
 
 import "./stylesheets/main.scss";
@@ -20,7 +20,7 @@ const App = () => {
     <div className="App">
       <Layout>
         <Header words={words} characters={characters} />
-        <Counter setWords={setWords} setCharacters={setCharacters} />
+        <Input setWords={setWords} setCharacters={setCharacters} />
         <Footer />
       </Layout>
     </div>

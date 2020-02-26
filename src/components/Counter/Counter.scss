@@ -1,15 +1,39 @@
+@import "../../stylesheets/abstracts/variables";
+@import "../../stylesheets/abstracts/breakpoints";
+@import "../../stylesheets/base/typography";
+
 // Counter.
 .counter {
-  width: 100%;
-  resize: vertical;
-  min-height: 400px;
-  border: none;
-  outline: none;
-  margin: 2rem 0;
-  font-family: inherit;
-  color: inherit;
-  font-size: 1rem;
-  line-height: 1.75;
-  box-shadow: unset;
-  padding: unset;
+  text-align: center;
+
+  @include tablet {
+    text-align: left;
+  }
+
+  &__title,
+  &__count {
+    padding: 0;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+  }
+
+  &__title {
+    font-size: 0.9rem;
+    font-weight: $medium;
+    color: $grey-600;
+    padding-bottom: 0.5rem;
+  }
+
+  &__count {
+    font-weight: $bold;
+    font-size: 1.3rem;
+    color: $grey-800;
+    line-height: initial;
+
+    &--small {
+      font-weight: $semi-bold;
+      font-size: 0.85rem;
+      color: $grey-600;
+    }
+  }
 }

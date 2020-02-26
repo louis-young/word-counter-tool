@@ -1,38 +1,44 @@
 import React from "react";
+import PropTypes from "prop-types";
 
+import Counter from "../Counter/Counter";
 import "./Header.scss";
 
 /**
  * Header component.
+ *
+ * @param { number } words;
+ * @param { number } characters;
  */
 
 const Header = ({ words, characters }) => {
+  // Store recommended META data character limits.
+  const limits = {
+    title: 60,
+    description: 160
+  };
+
   return (
     <header className="header">
-      <article className="header__item">
-        <h3 className="header__title">Words</h3>
-        <p className="header__count">{words}</p>
-      </article>
-      <article className="header__item">
-        <h3 className="header__title">Characters</h3>
-        <p className="header__count">{characters}</p>
-      </article>
-      <article className="header__item">
-        <h3 className="header__title">Title</h3>
-        <p className="header__count">
-          <span className="header__count--title">{characters}</span>
-          <span className="header__count--small"> / 60</span>
-        </p>
-      </article>
-      <article className="header__item">
-        <h3 className="header__title">Description</h3>
-        <p className="header__count">
-          <span className="header__count--description">{characters}</span>
-          <span className="header__count--small"> / 160</span>
-        </p>
-      </article>
+      <Counter title="Words" value={words} />
+      <Counter title="Characters" value={characters} />
+      <Counter title="Title" value={characters} limit={limits.title} />
+      <Counter
+        title="Description"
+        value={characters}
+        limit={limits.description}
+      />
     </header>
   );
+};
+
+/**
+ * Type checking.
+ */
+
+Header.propTypes = {
+  words: PropTypes.number,
+  characters: PropTypes.number
 };
 
 export default Header;

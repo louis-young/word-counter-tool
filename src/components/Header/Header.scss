@@ -8,43 +8,9 @@
   grid-template-columns: 1fr 1fr;
   grid-gap: 1rem;
   padding-bottom: 2rem;
-  border-bottom: 1px solid #e8e9ea;
+  border-bottom: 1px solid $border;
 
   @include tablet {
     grid-template-columns: 1fr 1fr 1fr 1fr;
-  }
-
-  &__item {
-    text-align: center;
-
-    @include tablet {
-      text-align: left;
-    }
-  }
-
-  &__title,
-  &__count {
-    padding: 0;
-    text-transform: uppercase;
-    letter-spacing: 0.1rem;
-  }
-
-  &__title {
-    font-size: 0.9rem;
-    font-weight: $medium;
-    color: $grey-600;
-    padding-bottom: 1rem;
-  }
-
-  &__count {
-    font-weight: $bold;
-    font-size: 1.3rem;
-    color: $grey-800;
-
-    &--small {
-      font-weight: $semi-bold;
-      font-size: 0.85rem;
-      color: $grey-600;
-    }
   }
 }

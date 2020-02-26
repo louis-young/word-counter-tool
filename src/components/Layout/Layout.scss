@@ -2,8 +2,8 @@
 
 // Layout.
 .layout {
-  margin: 2.5rem auto !important;
-  box-shadow: 0 0.5em 2em rgba(27, 41, 42, 0.0625);
+  margin: 2.5rem auto !important; // Needed to override component level specificity issue.
+  box-shadow: $shadow;
   background: $white;
   border-radius: 1rem;
   padding: 2rem;

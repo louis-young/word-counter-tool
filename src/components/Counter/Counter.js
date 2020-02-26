@@ -5,50 +5,37 @@ import "./Counter.scss";
 
 /**
  * Counter component.
+ *
+ * @param { string } title;
+ * @param { array } children;
  */
 
-const Counter = ({ setWords, setCharacters }) => {
-  /**
-   * Handle Change.
-   *
-   * Update state when the user input is changed.
-   *
-   * @param { object } event
-   */
-
-  const handleChange = event => {
-    const { value } = event.target;
-
-    // Guard clause against an empty string or falsy value.
-    if (!value) {
-      setWords(0);
-      setCharacters(0);
-      return;
-    }
-
-    const words = value.trim().split(/\s+/).length;
-
-    setWords(words);
-
-    const characters = value.length;
-
-    setCharacters(characters);
-  };
-
-  return (
-    <>
-      <textarea
-        className="counter"
-        onChange={handleChange}
-        placeholder="..."
-      ></textarea>
-    </>
+const Counter = ({ title, value, limit }) => {
+  // Conditionally render a different counter component.
+  return limit ? (
+    <article className="counter">
+      <h3 className="counter__title">{title}</h3>
+      <p className="counter__count">
+        <span className="counter__count--description">{value}</span>
+        <span className="counter__count--small"> / {limit}</span>
+      </p>
+    </article>
+  ) : (
+    <article className="counter__item">
+      <h3 className="counter__title">{title}</h3>
+      <p className="counter__count">{value}</p>
+    </article>
   );
 };
 
+/**
+ * Type checking.
+ */
+
 Counter.propTypes = {
-  setWords: PropTypes.func,
-  setCharacters: PropTypes.func
+  title: PropTypes.string,
+  value: PropTypes.number,
+  limit: PropTypes.number
 };
 
 export default Counter;

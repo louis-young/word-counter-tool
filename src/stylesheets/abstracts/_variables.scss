@@ -2,7 +2,7 @@
 * Colours.
 */
 
-$primary-color: hotpink;
+$primary-color: #4156d0;
 $secondary-color: lightsteelblue;
 $tertiary-color: darkslategrey;
 
@@ -35,11 +35,13 @@ $accent-color-transparent: transparentize($accent-color, $transparency);
  * Miscellaneous.
  */
 
-$shadow: 0 3px 6px rgba(0, 0, 0, 0.251);
+$shadow: 0 0.5em 2em rgba(27, 41, 42, 0.0625);
 
 $overlay: rgba(0, 0, 0, 0.75);
 
 $round: 0.5rem;
+
+$border: #e8e9ea;
 
 /**
 * Material design palette.
