@@ -14,7 +14,7 @@ const Footer = () => {
         <a
           href="//louisyoung.co.uk"
           target="_blank"
-          rel="noopener"
+          rel="noopener noreferrer"
           className="footer__link"
         >
           Louis Young
