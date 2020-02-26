@@ -7,20 +7,14 @@ import Footer from "./components/Footer/Footer";
 
 import "./stylesheets/main.scss";
 
-/**
- * Application component.
- */
-
 const App = () => {
-  // Application level state.
-  const [words, setWords] = useState(0);
-  const [characters, setCharacters] = useState(0);
+  const [value, setValue] = useState("");
 
   return (
     <div className="App">
       <Layout>
-        <Header words={words} characters={characters} />
-        <Input setWords={setWords} setCharacters={setCharacters} />
+        <Header value={value} />
+        <Input setValue={setValue} />
         <Footer />
       </Layout>
     </div>

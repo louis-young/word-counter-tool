@@ -3,12 +3,6 @@ import PropTypes from "prop-types";
 
 import "./Layout.scss";
 
-/**
- * Layout component.
- *
- * @param { array } children.
- */
-
 const Layout = ({ children }) => {
   return (
     <>
@@ -16,10 +10,6 @@ const Layout = ({ children }) => {
     </>
   );
 };
-
-/**
- * Type checking.
- */
 
 Layout.propTypes = {
   children: PropTypes.array

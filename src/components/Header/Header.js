@@ -4,19 +4,16 @@ import PropTypes from "prop-types";
 import Counter from "../Counter/Counter";
 import "./Header.scss";
 
-/**
- * Header component.
- *
- * @param { number } words.
- * @param { number } characters.
- */
-
-const Header = ({ words, characters }) => {
+const Header = ({ value }) => {
   // Store recommended META data character limits.
   const limits = {
     title: 60,
     description: 160
   };
+
+  const words = value ? value.trim().split(/\s+/).length : 0;
+
+  const characters = value.length;
 
   return (
     <header className="header">
@@ -31,10 +28,6 @@ const Header = ({ words, characters }) => {
     </header>
   );
 };
-
-/**
- * Type checking.
- */
 
 Header.propTypes = {
   words: PropTypes.number,

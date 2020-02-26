@@ -3,15 +3,7 @@ import PropTypes from "prop-types";
 
 import "./Counter.scss";
 
-/**
- * Counter component.
- *
- * @param { string } title.
- * @param { array } children.
- */
-
 const Counter = ({ title, value, limit }) => {
-  // Conditionally render a different counter component.
   return limit ? (
     <article className="counter">
       <h3 className="counter__title">{title}</h3>
@@ -27,10 +19,6 @@ const Counter = ({ title, value, limit }) => {
     </article>
   );
 };
-
-/**
- * Type checking.
- */
 
 Counter.propTypes = {
   title: PropTypes.string,

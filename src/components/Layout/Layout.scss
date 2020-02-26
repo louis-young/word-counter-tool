@@ -1,6 +1,5 @@
 @import "../../stylesheets/abstracts/variables";
 
-// Layout.
 .layout {
   margin: 2.5rem auto !important; // Needed to override component level specificity issue.
   box-shadow: $shadow;
