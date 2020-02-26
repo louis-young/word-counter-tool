@@ -16,8 +16,7 @@ const Input = ({ setValue }) => {
 };
 
 Input.propTypes = {
-  setWords: PropTypes.func,
-  setCharacters: PropTypes.func
+  setValue: PropTypes.func
 };
 
 export default Input;

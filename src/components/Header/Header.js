@@ -30,8 +30,7 @@ const Header = ({ value }) => {
 };
 
 Header.propTypes = {
-  words: PropTypes.number,
-  characters: PropTypes.number
+  value: PropTypes.string
 };
 
 export default Header;
