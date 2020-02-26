@@ -11,7 +11,12 @@ const Footer = () => {
     <footer className="footer">
       <p className="footer__text">
         Developed by{" "}
-        <a href="//www.louisyoung.co.uk" className="footer__link">
+        <a
+          href="//louisyoung.co.uk"
+          target="_blank"
+          rel="noopener"
+          className="footer__link"
+        >
           Louis Young
         </a>
         .
