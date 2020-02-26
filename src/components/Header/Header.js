@@ -7,8 +7,8 @@ import "./Header.scss";
 /**
  * Header component.
  *
- * @param { number } words;
- * @param { number } characters;
+ * @param { number } words.
+ * @param { number } characters.
  */
 
 const Header = ({ words, characters }) => {

@@ -6,8 +6,8 @@ import "./Input.scss";
 /**
  * Input component.
  *
- * @param { function } setWords;
- * @param { function } setCharacters;
+ * @param { function } setWords.
+ * @param { function } setCharacters.
  */
 
 const Input = ({ setWords, setCharacters }) => {

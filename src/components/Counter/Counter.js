@@ -6,8 +6,8 @@ import "./Counter.scss";
 /**
  * Counter component.
  *
- * @param { string } title;
- * @param { array } children;
+ * @param { string } title.
+ * @param { array } children.
  */
 
 const Counter = ({ title, value, limit }) => {

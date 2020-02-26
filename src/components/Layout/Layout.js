@@ -6,7 +6,7 @@ import "./Layout.scss";
 /**
  * Layout component.
  *
- * @param { array } children;
+ * @param { array } children.
  */
 
 const Layout = ({ children }) => {
