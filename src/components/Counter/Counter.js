@@ -13,7 +13,7 @@ const Counter = ({ title, value, limit }) => {
       </p>
     </article>
   ) : (
-    <article className="counter__item">
+    <article className="counter">
       <h3 className="counter__title">{title}</h3>
       <p className="counter__count">{value}</p>
     </article>

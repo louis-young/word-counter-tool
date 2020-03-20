@@ -3,12 +3,6 @@
 @import "../../stylesheets/base/typography";
 
 .counter {
-  text-align: center;
-
-  @include tablet {
-    text-align: left;
-  }
-
   &__title,
   &__count {
     padding: 0;
