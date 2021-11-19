@@ -1,6 +1,6 @@
 # Word Counter
 
-React application to count characters and words for SEO.
+A React application to count characters and words for SEO.
 
 ![Word Counter](documentation/word-counter.jpg)
 
