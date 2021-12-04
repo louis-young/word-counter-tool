@@ -1,16 +1,22 @@
 # Word Counter
 
-A React application to count characters and words for SEO.
+A word and character counter tool.
 
 ![Word Counter](documentation/word-counter.jpg)
 
 ## Description
 
-This is an application which counts the amount of characters and words within the given content, and provides visual progress indicators showing how close the content is to the recommended length of a specific piece of META data.
+A word and character counter tool that counts the amount of characters and words within the given content, and provides visual progress indicators showing how close the content is to the recommended length of a specific piece of META data.
 
 ## Motivation
 
-I built this application as some team members at work were struggling to efficiently write META data for website SEO. This application solved that problem by providing a quick and intuitive way to do it.
+This project was built to aid colleagues at a web development agency in writing content for website search engine optimisation (SEO and META data) and social media marketing.
+
+### Technologies
+
+- JavaScript.
+- React.
+- Sass (BEM).
 
 ### Available Scripts
 
