@@ -12,7 +12,7 @@ A word and character counter tool that counts the amount of characters and words
 
 This project was built to aid colleagues at a web development agency in writing content for website search engine optimisation (SEO and META data) and social media marketing.
 
-### Technologies
+## Technologies
 
 - JavaScript.
 - React.
