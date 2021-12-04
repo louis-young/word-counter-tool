@@ -1,8 +1,8 @@
-# Word Counter
+# Word Counter Tool
 
 A word and character counter tool.
 
-![Word Counter](documentation/word-counter.jpg)
+![Word Counter Tool](documentation/word-counter-tool.jpg)
 
 ## Description
 
